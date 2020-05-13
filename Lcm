@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main()
+{
+  int a=12,b=30;
+  int result=lcm(a,b);
+  printf("Lcm is %d",result);
+  return 0;
+}
+int lcm(int a,int b)
+{
+  return(a*b)/l(a,b);
+}
+int l(int a,int b)
+{
+  if(a==0)
+  {
+    return b;
+  }
+  else
+  {
+    return l(b%a,a);
+  }
+}
